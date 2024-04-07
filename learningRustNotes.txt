@@ -1,0 +1,79 @@
+#### Hello World Basics
+
+The first part of a rust program is:
+
+fn main {
+
+}
+
+This is always the first code that is run.
+For code formatting rust style is to indent with 4
+    spaces.  Very similar to python.
+
+the ! mark indicates that it is calling a macro. If
+    it does not have this it would be calling a
+    function
+
+Each line is ended with a ;
+
+After compiling a program, there will always be 3
+    files present:
+
+    <name>.rs - the initially developed program
+    <name>.pdb - the debugging information
+    <name>.exe - the compiled executable
+
+### Cargo
+
+Cargo is the rust package manager similar to pip.
+
+we can create a new project by running:
+
+cargo new <project>
+
+This command will create the base structure of a project.
+    It will create a file called Cargo.toml that
+    is similar to the pip requirements file.  It has
+    all of the information about the project, the
+    version information and when it was built.
+
+    It also creates a src directory that contains the
+    initial main.rs file.  This puts in a boilerplate
+    hello world main function to get things started.
+
+    Lastly, it will automatically initialize git if not
+    done so previously and the .gitignore file.
+
+Now we want to build the cargo project.  We run the 
+    command in the project root directory:
+
+    cargo build
+
+    This will create a debug build.  To run it go to
+    the debug directory and you will see a hello_cargo.exe
+    similar to the hello world in the first example.
+
+    This can be run by either running the .exe as was
+    done in the first example or by running from the root:
+
+    cargo run
+
+    both will execute the program.
+
+    If we want to check the program without building an
+    executable.  We can also run the command:
+
+    cargo check
+
+    This will make sure it can be compiled.  All of these
+    need to be done in the directory where the cargo.toml
+    file is located to work.
+
+Now its time to release the code to production. This is
+    where the build command changes a little:
+
+    cargo build --release
+
+    Now we have a production ready executable.
+
+
