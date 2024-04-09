@@ -1,2 +1,4 @@
 /hello_cargo/target
-/hello_world
+/hello_world/Cargo.lock
+/guessing_game/target
+/guessing_game/Cargo.lock

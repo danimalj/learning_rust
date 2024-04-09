@@ -77,3 +77,17 @@ Now its time to release the code to production. This is
     Now we have a production ready executable.
 
 
+### Guessing game
+
+In a simple guessing game we will build the ability to print lines
+    to the screen, create new variables.  Input new user data and
+    output that data to the screen.  Some points of note with the
+    program:
+
+    println! - Macro that prints output to the screen;
+    let mut var String::new(); //creates a mutable empty string variable.
+    let var = 5; creates a immutable variable with the value 5 bound to it.
+    io:stdin().read_line(&mut var); //takes input from the keyboard
+        //and reads it into a mutable variable.  The & symbol indicates
+        //that it is a reference so i dont have to copy it.  its available
+        //throughout the program.
